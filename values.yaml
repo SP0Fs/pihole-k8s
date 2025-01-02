@@ -21,6 +21,10 @@ dnsHostPort:
   enabled: true
   port: 53
 
+admin:
+  existingSecret: pihole-webpassword
+  passwordKey: password
+
 nodeSelector:
   kubernetes.io/hostname: "hp-elitedesk"
 

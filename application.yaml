@@ -16,9 +16,9 @@ spec:
     - repoURL: "https://github.com/SP0Fs/pihole-k8s.git"
       targetRevision: HEAD
       ref: values
-    # - repoURL: "https://github.com/SP0Fs/pihole-k8s.git"
-    #   targetRevision: HEAD
-    #   path: resources
+    - repoURL: "https://github.com/SP0Fs/pihole-k8s.git"
+      targetRevision: HEAD
+      path: resources
   destination:
     server: "https://kubernetes.default.svc"
     namespace: pihole
