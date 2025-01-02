@@ -13,6 +13,10 @@ persistentVolumeClaim:
   size: 500Mi
   storageClass: ssd
 
+dnsHostPort:
+  enabled: true
+  port: 53
+
 nodeSelector:
   kubernetes.io/hostname: "hp-elitedesk"
 
