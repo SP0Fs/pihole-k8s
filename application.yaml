@@ -6,8 +6,8 @@ metadata:
 spec:
   project: spof-cluster
   sources:
-    - chart: pihole-kubernetes
-      repoURL: https://mojo2600.github.io
+    - chart: pihole
+      repoURL: https://mojo2600.github.io/pihole-kubernetes/
       targetRevision: 2.27.0
       helm:
         releaseName: pihole

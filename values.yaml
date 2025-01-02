@@ -1,6 +1,6 @@
 serviceDns:
   type: NodePort
-  nodePort: 30053
+  nodePort: 30553
 
 doh:
   enabled: true
