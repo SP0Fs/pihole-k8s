@@ -1,7 +1,7 @@
 serviceDns:
   type: NodePort
   mixedService: true
-  nodePort: 30353
+  nodePort: 30053
 
 doh:
   enabled: true
