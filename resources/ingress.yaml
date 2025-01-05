@@ -22,7 +22,7 @@ spec:
       http:
         paths:
           - pathType: Prefix
-            path: /
+            path: /admin
             backend:
               service:
                 name: pihole-web
