@@ -6,16 +6,16 @@ metadata:
 spec:
   project: spof-cluster
   sources:
-    - chart: pihole
-      repoURL: https://mojo2600.github.io/pihole-kubernetes/
-      targetRevision: 2.27.0
-      helm:
-        releaseName: pihole
-        valueFiles:
-          - $values/values.yaml
-    - repoURL: "https://github.com/SP0Fs/pihole-k8s.git"
-      targetRevision: HEAD
-      ref: values
+    # - chart: pihole
+    #   repoURL: https://mojo2600.github.io/pihole-kubernetes/
+    #   targetRevision: 2.27.0
+    #   helm:
+    #     releaseName: pihole
+    #     valueFiles:
+    #       - $values/values.yaml
+    # - repoURL: "https://github.com/SP0Fs/pihole-k8s.git"
+    #   targetRevision: HEAD
+    #   ref: values
     - repoURL: "https://github.com/SP0Fs/pihole-k8s.git"
       targetRevision: HEAD
       path: resources
