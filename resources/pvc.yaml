@@ -4,9 +4,9 @@ metadata:
   name: pihole-pvc-pihole
   namespace: pihole
 spec:
-  storageClassName: ssd
+  storageClassName: manual
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: 5Gi
