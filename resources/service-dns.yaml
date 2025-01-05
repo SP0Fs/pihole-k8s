@@ -13,18 +13,17 @@ spec:
       targetPort: 53
       name: pihole-dns-udp
       protocol: UDP
+      nodePort: 30053
     - port: 53
       targetPort: 53
       name: pihole-dns-tcp
       protocol: TCP
+      nodePort: 30053
     - port: 67
       targetPort: 67
       name: pihole-67-udp
       protocol: UDP
-  type: LoadBalancer
-  # You want to assign a fixed ip address
-  # pihole will be used as a DNS server
-  # on your network, and that needs to be a
-  # well known/unchanging address.
-  loadBalancerIP: 192.168.178.99
+      nodePort: 30067
+  type: NodePort
+  # loadBalancerIP: 192.168.178.99
   sessionAffinity: ClientIP

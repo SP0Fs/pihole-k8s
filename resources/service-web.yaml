@@ -16,7 +16,6 @@ spec:
     - port: 443
       targetPort: 443
       name: https
-  type: LoadBalancer
+  type: ClusterIP
   # use the same ip address as used previously
-  loadBalancerIP: 192.168.178.99
   sessionAffinity: ClientIP
