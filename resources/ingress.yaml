@@ -10,20 +10,20 @@ metadata:
     nginx.ingress.kubernetes.io/auth-tls-secret: "ingress-nginx/spof-cert"
     nginx.ingress.kubernetes.io/auth-tls-verify-depth: "1"
     nginx.ingress.kubernetes.io/auth-tls-error-page: "https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Fmobile%2F000%2F002%2F144%2FYou_Shall_Not_Pass!_0-1_screenshot.jpg"
-  spec:
-    ingressClassName: nginx
-    tls:
-      - hosts:
-          - pihole.leibold.tech
-        secretName: pihole-certs
-    rules:
-      - host: pihole.leibold.tech
-        http:
-          paths:
-            - pathType: Prefix
-              path: /
-              backend:
-                service:
-                  name: pihole-web
-                  port:
-                    name: http
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - pihole.leibold.tech
+      secretName: pihole-certs
+  rules:
+    - host: pihole.leibold.tech
+      http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: pihole-web
+                port:
+                  name: http
