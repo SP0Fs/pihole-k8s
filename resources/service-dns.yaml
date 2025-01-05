@@ -4,7 +4,7 @@ metadata:
   name: pihole-dns
   namespace: pihole
   annotations:
-    metallb.universe.tf/loadBalancerIPs: 192.168.178.128
+    metallb.universe.tf/address-pool: marc-local
 spec:
   selector:
     app: pihole
@@ -22,5 +22,5 @@ spec:
       name: pihole-67-udp
       protocol: UDP
   type: LoadBalancer
-  loadBalancerIP: 192.168.178.128
+  # loadBalancerIP: 192.168.178.128
   sessionAffinity: ClientIP
