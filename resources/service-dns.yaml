@@ -13,17 +13,14 @@ spec:
       targetPort: 53
       name: pihole-dns-udp
       protocol: UDP
-      nodePort: 53
     - port: 53
       targetPort: 53
       name: pihole-dns-tcp
       protocol: TCP
-      nodePort: 53
     - port: 67
       targetPort: 67
       name: pihole-67-udp
       protocol: UDP
-      nodePort: 67
   type: LoadBalancer
   loadBalancerIP: 192.168.178.128
   sessionAffinity: ClientIP
