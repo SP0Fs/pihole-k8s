@@ -45,10 +45,10 @@ spec:
               value: "5053"
           resources:
             requests:
-              memory: "50Mi"
+              memory: "250Mi"
               cpu: "250m"
             limits:
-              memory: "100Mi"
+              memory: "500Mi"
               cpu: "500m"
           ports:
             - containerPort: 5053
