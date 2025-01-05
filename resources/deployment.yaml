@@ -98,11 +98,5 @@ spec:
           volumeMounts:
             - mountPath: /etc/pihole
               name: pihole-config
-            - mountPath: /etc/pihole/custom.list
-              name: pihole-custom-list
-              subPath: custom.list
-            - mountPath: /etc/pihole/adlists.list
-              name: pihole-adlists-list
-              subPath: adlists.list
             - mountPath: /etc/dnsmasq.d
               name: pihole-dnsmasq
