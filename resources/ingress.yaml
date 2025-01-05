@@ -27,4 +27,4 @@ spec:
               service:
                 name: pihole-web
                 port:
-                  name: http
+                  name: https
