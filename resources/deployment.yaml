@@ -45,11 +45,11 @@ spec:
               value: "5053"
           resources:
             requests:
-              memory: "250Mi"
-              cpu: "250m"
-            limits:
               memory: "500Mi"
               cpu: "500m"
+            limits:
+              memory: "1Gi"
+              cpu: "1"
           ports:
             - containerPort: 5053
               name: cf-tcp
